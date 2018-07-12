@@ -20,12 +20,6 @@
       "App\\": "App/"
     }
   },
-  "minimum-stability": "dev",
-  "extra": {
-    "branch-alias": {
-      "dev-master": "1.0-dev"
-    }
-  },
   "config": {
     "vendor-dir": "Fix/Packages",
     "preferred-install": "dist",
@@ -34,9 +28,9 @@
   },
   "optimize-autoloader": true,
   "require": {
-    "fixframework/console": "1.0.*",
-    "fixframework/assets": "1.0.*",
-    "fixframework/database": "1.0.*",
-    "fixframework/model": "1.0.*"
+    "fixframework/console": "dev-master",
+    "fixframework/assets": "dev-master",
+    "fixframework/database": "dev-master",
+    "fixframework/model": "dev-master"
   }
 }
