@@ -20,13 +20,6 @@
       "App\\": "App/"
     }
   },
-  "config": {
-    "vendor-dir": "Fix/Packages",
-    "preferred-install": "dist",
-    "sort-packages": true,
-    "optimize-autoloader": true
-  },
-  "optimize-autoloader": true,
   "require": {
     "fixframework/console": "dev-master",
     "fixframework/assets": "dev-master",
