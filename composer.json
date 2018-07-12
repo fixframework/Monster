@@ -1,0 +1,42 @@
+{
+  "name": "fixframework/monster",
+  "type": "project",
+  "description": "Monster Framework",
+  "keywords": ["Framework","Fix Framework","Monster","Monster Framework","Php Framework","Flexible","Flexible Framework"],
+  "homepage": "https://zekicetasarim.com/",
+  "license": "MIT",
+  "authors":
+  [
+    {
+      "name":     "Cengiz AKCAN",
+      "email":    "cengiz@zekicetasarim.com",
+      "homepage": "https://www.zekicetasarim.com",
+      "role":     "Core Developer and Founder"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Fix\\": "Fix/",
+      "App\\": "App/"
+    }
+  },
+  "minimum-stability": "dev",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
+  "config": {
+    "vendor-dir": "Fix/Packages",
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "optimize-autoloader": true,
+  "require": {
+    "fixframework/console": "1.0.*",
+    "fixframework/assets": "1.0.*",
+    "fixframework/database": "1.0.*",
+    "fixframework/model": "1.0.*"
+  }
+}
