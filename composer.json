@@ -20,13 +20,20 @@
       "App\\": "App/",
       "fixframework\\": "Fix/Packages/"
     }
-  }, 
+  },
+  "minimum-stability": "dev",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
   "config": {
     "vendor-dir": "Fix/Packages",
     "preferred-install": "dist",
     "sort-packages": true,
     "optimize-autoloader": true
   },
+  "optimize-autoloader": true,
   "require": {
     "fixframework/console": "dev-master",
     "fixframework/assets": "dev-master",
