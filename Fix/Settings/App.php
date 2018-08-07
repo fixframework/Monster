@@ -3,8 +3,6 @@
 
 namespace Fix\Settings;
 
-use App\www\Controllers\__class;
-use Fix\Support\Header;
 use Fix\Support\Support;
 
 class App
@@ -13,19 +11,17 @@ class App
     const APP =
         [
 
-            "127.0.0.1" => [
+            "192.168.1.200" => [
                 "folder"                => "www",
-                "router"                => "Master",
-                "cdn"                   => false,
+                "router"                => "main",
                 "assets"                => false,
-                "encodeCompression"     => false,
                 "https"                 => false,
                 "maintenance"           => false,
                 "maintenanceRouter"     =>
                     [
                         "/" =>
                             [
-                                "127.0.0.1",
+                                "0.0.0.0",
                                 Support::GET,
                                 [
                                     "username" => "developer",
@@ -48,7 +44,7 @@ class App
                     ]
             ]
 
-            // ... e.g Recode your applications
+            // ... e.g parameters of your application
 
         ];
 

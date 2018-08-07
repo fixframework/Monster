@@ -106,6 +106,22 @@ class Support
 
     }
 
+
+    public static function __httpsControl($Request = null){
+
+        if(Url::getSettings()["https"]):
+
+            if(!isset($_SERVER['HTTPS'])):
+
+                header::redirect("https://".$_SERVER['HTTP_HOST'].($_SERVER["REQUEST_URI"] ?? ""));
+
+            endif;
+
+        endif;
+
+    }
+
+
     /**
      * @param null $Request
      */
@@ -125,6 +141,9 @@ class Support
 
         // Maintenance Mode
         self::__maintenanceMode($Request);
+
+        // Maintenance Mode
+        self::__httpsControl($Request);
 
         // Auto Class Loader
         self::__autoLoader($Request);

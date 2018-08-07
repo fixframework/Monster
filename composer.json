@@ -28,16 +28,11 @@
     }
   },
   "config": {
-    "vendor-dir": "Fix/Packages",
+    "vendor-dir": "Fix/External",
     "preferred-install": "dist",
     "sort-packages": true,
     "optimize-autoloader": true
   },
   "optimize-autoloader": true,
-  "require": {
-    "fixframework/console": "dev-master",
-    "fixframework/assets": "dev-master",
-    "fixframework/database": "dev-master",
-    "fixframework/model": "dev-master"
-  }
+  "require": {}
 }

@@ -28,13 +28,13 @@ class Kernel {
 
     // ASSETS
     const ASSETS_MASTER_FOLDER              = "Assets";
-    const ASSETS_JS_FOLDER                  = "Js";
+    const ASSETS_JS_FOLDER                  = "Javascript";
     const ASSETS_HTML_FOLDER                = "Html";
     const ASSETS_CSS_FOLDER                 = "Css";
     const ASSETS_IMAGE_FOLDER               = "Image";
     const ASSETS_FONT_FOLDER                = "Font";
     const ASSETS_PAGES_FOLDER               = "Pages";
-    const ASSETS_EXTERNAL_FOLDER            = "External/autoload.php";
+    const ASSETS_EXTERNAL_FOLDER            = "External";
     const ASSETS_TRANSLATE_FOLDER           = "Translate";
 
 

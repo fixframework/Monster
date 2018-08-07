@@ -20,9 +20,7 @@
 
 error_reporting(0);
 
-header('Content-Type: text/html; charset=utf-8');
-
-require("Fix/Packages/autoload.php");
+require("Fix/External/autoload.php");
 
 use Fix\Kernel\Kernel;
 

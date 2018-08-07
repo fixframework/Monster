@@ -44,11 +44,20 @@ class Header
     }
 
     /**
-     * @param null $target
+     * @param null $setTarget
      */
-    public static function redirect($target = null){
+    public static function redirect($setTarget = null){
 
-        header("Location: ".$target);
+        header("Location: ".$setTarget);
+
+    }
+
+    /**
+     * @param null $setType
+     */
+    public static function content($setType = null){
+
+        header("Content-type: ".$setType);
 
     }
 

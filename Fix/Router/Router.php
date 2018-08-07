@@ -3,6 +3,7 @@
 namespace Fix\Router;
 
 
+use Fix\Packages\Assets\Assets;
 use Fix\Support\Header;
 
 class Router
@@ -128,6 +129,9 @@ class Router
                 [$__setParameter[2],$__setParameter[3]],
                 self::setCallParameters(self::withReplaceUrl($__setParameter[1],$__setParameter[4])["DATA"])
             );
+        elseif ($__setParameter[0] === "ASSETS"):
+            $getParameter = self::setCallParameters(self::withReplaceUrl($__setParameter[1],$__setParameter[3])["DATA"]);
+            Assets::autoAssetsLoader($getParameter[1],$getParameter[2],$__setParameter[2]);
         endif;
 
     }
@@ -325,6 +329,20 @@ class Router
         ); endif;
     }
 
+    /**
+     * @param null $urlParameter
+     * @param null $parameter
+     */
+    public static function assets($urlParameter = null, $parameter = null){
+        self::isMatch(self::withReplaceUrl($urlParameter,"GET")[0],"GET") ?
+            self::setTwoChange(
+                "ASSETS",
+                $urlParameter,
+                $parameter,
+                "GET"
+            )
+            : false;
+    }
 
     /**
      * @param callable $function
