@@ -11,7 +11,7 @@ class App
     const APP =
         [
 
-            "192.168.1.200" => [
+            "localhost" => [
                 "folder"                => "www",
                 "router"                => "main",
                 "assets"                => false,
