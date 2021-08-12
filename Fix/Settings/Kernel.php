@@ -22,7 +22,7 @@ class Kernel {
     const VIEWS_FOLDER                      = "Views";
     const CORE_EXTENSION                    = ".php";
     const TRANSLATE_EXTENSION               = ".json";
-    const MULTIPLE_STATUS                   = true;
+    const MULTIPLE_STATUS                   = false;
     const DEFAULT_FOLDER                    = "www";
 
 
